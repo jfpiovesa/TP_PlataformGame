@@ -17,7 +17,7 @@ public class ui_StageFinish : MonoBehaviour
     [SerializeField] private Button btn_menu;
 
     [Header("Scene")]
-    [SerializeField] private SceneAsset sceneMenu;
+    [SerializeField] private string sceneMenu;
     private void Awake()
     {
         Initialized();

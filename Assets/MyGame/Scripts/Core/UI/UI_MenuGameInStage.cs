@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +5,7 @@ using UnityEngine.UI;
 public class UI_MenuGameInStage : MonoBehaviour
 {
     [SerializeField] private GameObject content;
-    [SerializeField] private SceneAsset sceneMenu;
+    [SerializeField] private string sceneMenuName;
 
     [Header("UI Componemts")]
     [SerializeField] private Button btn_resume;
@@ -49,7 +47,7 @@ public class UI_MenuGameInStage : MonoBehaviour
     public void Menu()
     {
         SaveGame();
-        ApplicationManager.Instance.loadingSceneController.LoadScene(sceneMenu, E_TypeAnimLoading.fade);
+        ApplicationManager.Instance.loadingSceneController.LoadScene(sceneMenuName, E_TypeAnimLoading.fade);
     }
     void SaveGame()
     {

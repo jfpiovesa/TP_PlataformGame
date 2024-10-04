@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -11,7 +9,7 @@ public class SO_StageData : ScriptableObject
     public string nameStage;
     public int totalBoxes;
     public Sprite thumnielStage;
-    public SceneAsset sceneStage;
+    public string sceneStage;
     
 
 }

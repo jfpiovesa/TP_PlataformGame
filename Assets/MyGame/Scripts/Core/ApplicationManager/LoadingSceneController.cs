@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 
 public class LoadingSceneController : MonoBehaviour
@@ -13,18 +12,18 @@ public class LoadingSceneController : MonoBehaviour
 
     private float timeAnimCurrenty;
     AsyncOperation operation;
-    public void LoadScene(SceneAsset scene, E_TypeAnimLoading typeAnimLoading)
+    public void LoadScene(string scene, E_TypeAnimLoading typeAnimLoading)
     {
         e_typeAnimLoading = typeAnimLoading;
         StartCoroutine(LoadAsync(scene));
     }
-    private IEnumerator LoadAsync(SceneAsset scene)
+    private IEnumerator LoadAsync(string scene)
     {
         LoadImageAnim(true);
 
         yield return new WaitForSeconds(timeAnimCurrenty);
 
-        operation = SceneManager.LoadSceneAsync(scene.name);
+        operation = SceneManager.LoadSceneAsync(scene);
 
         while (!operation.isDone)
         {

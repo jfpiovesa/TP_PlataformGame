@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,7 +13,7 @@ public class UI_MenuInitial : MonoBehaviour
     [SerializeField] private Button btn_ExitGame;
 
     [Header("Scenes"),Space(5)]
-    [SerializeField] private SceneAsset sceneStage;
+    [SerializeField] private string sceneStageName;
     
     private void Awake()
     {
@@ -41,7 +39,7 @@ public class UI_MenuInitial : MonoBehaviour
     }
     void StartGame()
     {
-        ApplicationManager.Instance.loadingSceneController.LoadScene(sceneStage,E_TypeAnimLoading.fade);
+        ApplicationManager.Instance.loadingSceneController.LoadScene(sceneStageName, E_TypeAnimLoading.fade);
     }
     void DashBoard()
     {

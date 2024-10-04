@@ -605,7 +605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a15a978669c3c84a80c1ed13bb76399, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneSelected: {fileID: 102900000, guid: c1c21432c5624c643b645d3d947a0806, type: 3}
+  sceneName: 02-Menu-Game
   delayLoadingScene: 1
   timeDelay: 1
 --- !u!4 &1399946652

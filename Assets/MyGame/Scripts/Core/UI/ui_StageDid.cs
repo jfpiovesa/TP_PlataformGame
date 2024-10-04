@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,7 +16,7 @@ public class ui_StageDid : MonoBehaviour
     [SerializeField] private Button btn_menu;
 
     [Header("Scene")]
-    [SerializeField] private SceneAsset sceneMenu;
+    [SerializeField] private string sceneMenu;
     private void Awake()
     {
         Initialized();
