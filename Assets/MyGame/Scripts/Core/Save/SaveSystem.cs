@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using UnityEngine;
 
@@ -11,27 +12,44 @@ public class SaveSystem : MonoBehaviour
 
     public void Inialization()
     {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (!UnityEngine.Android.Permission.HasUserAuthorizedPermission(UnityEngine.Android.Permission.ExternalStorageWrite))
+            {
+                UnityEngine.Android.Permission.RequestUserPermission(UnityEngine.Android.Permission.ExternalStorageWrite);
+            }
+        }
+
         filePathCurrenty = Path.Combine(Application.dataPath, filePath);
         LoadGame();
     }
 
     public void SaveGame()
     {
-        string json = JsonUtility.ToJson(gameState, true);
-
-        if (File.Exists(filePathCurrenty))
+        string json = JsonUtility.ToJson(gameState);
+        try
         {
-            File.WriteAllText(filePathCurrenty, json);
+
+            if (File.Exists(filePathCurrenty))
+            {
+                File.WriteAllText(filePathCurrenty, json);
+            }
+            else
+            {
+                using (StreamWriter writer = File.CreateText(filePathCurrenty))
+                {
+                    writer.Write(json);
+                }
+            }
+            if (ApplicationManager.Instance.debugInfos)
+            {
+                Debug.Log("Jogo salvo em: " + filePathCurrenty);
+
+            }
         }
-        else
+        catch (Exception e)
         {
-            File.CreateText(filePathCurrenty);
-        }
-
-        if (ApplicationManager.Instance.debugInfos)
-        {
-            Debug.Log("Jogo salvo em: " + filePathCurrenty);
-
+            Debug.LogError("Erro ao salvar o arquivo: " + e.Message);
         }
     }
 

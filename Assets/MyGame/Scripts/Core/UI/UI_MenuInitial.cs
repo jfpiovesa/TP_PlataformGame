@@ -47,6 +47,6 @@ public class UI_MenuInitial : MonoBehaviour
     }
     void ExitGame()
     {
-
+        Application.Quit();
     }
 }

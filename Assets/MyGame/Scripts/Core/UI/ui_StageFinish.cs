@@ -8,7 +8,7 @@ public class ui_StageFinish : MonoBehaviour
     [SerializeField] private GameObject content;
 
     [Header("text")]
-    [SerializeField]private TMP_Text text_NameStage;
+    [SerializeField] private TMP_Text text_NameStage;
     [SerializeField] private TMP_Text text_boxes;
     [SerializeField] private TMP_Text text_time;
 
@@ -42,7 +42,7 @@ public class ui_StageFinish : MonoBehaviour
         St_StageAction.currentStageController.playerCharacter.CanMove = false;
 
         SaveGame();
-       
+
         St_StageAction.MobileCanvas?.gameObject.SetActive(false);
 
         text_NameStage.text = St_StageAction.currentStageController.stageData.name;
@@ -53,15 +53,15 @@ public class ui_StageFinish : MonoBehaviour
     }
     public void ReplayAgain()
     {
-       
+
         ApplicationManager.Instance.loadingSceneController.LoadScene(St_StageAction.currentStageController.stageData.sceneStage, E_TypeAnimLoading.fade);
         content.SetActive(false);
     }
 
-   
+
     public void Menu()
     {
-       
+
         ApplicationManager.Instance.loadingSceneController.LoadScene(sceneMenu, E_TypeAnimLoading.fade);
     }
     void SaveGame()

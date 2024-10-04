@@ -26,16 +26,6 @@ public class UI_MainStage : MonoBehaviour
         St_StageAction.FinishAction = ui_StageFinish.SetUpStageFinish;
         St_StageAction.DidAction = ui_StageDid.SetUpStageDid;
         OnInitialized();
-    }
-    private void OnDisable()
-    {
-        St_StageAction.TextBoxesCurrentStage  =  null;
-        St_StageAction.TextTimeCurrentStage = null;
-        St_StageAction.IconeCurrentStage = null;
-        St_StageAction.LifeChatacterEggs = null;
-        St_StageAction.FinishAction = null;
-        St_StageAction.DidAction = null;
-
 
     }
     private void OnInitialized()

@@ -66,6 +66,7 @@ public class ui_StageDid : MonoBehaviour
             internshipAttempts = St_StageAction.currentStageController.statusStage.internshipAttempts,
 
         };
+
         if (stagestatus != null)
         {
             newStagestatus.boxes = stagestatus.boxes;
