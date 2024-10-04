@@ -3084,7 +3084,7 @@ MonoBehaviour:
   text_time: {fileID: 3454563320359328398}
   btn_replayAgain: {fileID: 6689737789470874759}
   btn_menu: {fileID: 3803388628547964450}
-  sceneMenu: {fileID: 102900000, guid: c1c21432c5624c643b645d3d947a0806, type: 3}
+  sceneMenu: 02-Menu-Game
 --- !u!1 &3016314284521193811
 GameObject:
   m_ObjectHideFlags: 0
@@ -4419,7 +4419,7 @@ MonoBehaviour:
   text_time: {fileID: 791396537595606087}
   btn_replayAgain: {fileID: 6438210165781415280}
   btn_menu: {fileID: 1558880478286034638}
-  sceneMenu: {fileID: 102900000, guid: c1c21432c5624c643b645d3d947a0806, type: 3}
+  sceneMenu: 02-Menu-Game
 --- !u!1 &4321222124068955180
 GameObject:
   m_ObjectHideFlags: 0
@@ -4558,7 +4558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: {fileID: 9195032899216920630}
-  sceneMenu: {fileID: 102900000, guid: c1c21432c5624c643b645d3d947a0806, type: 3}
+  sceneMenuName: 02-Menu-Game
   btn_resume: {fileID: 5368827460128024346}
   btn_replayAgain: {fileID: 4995512550421607303}
   btn_Menu: {fileID: 4998449271599132815}

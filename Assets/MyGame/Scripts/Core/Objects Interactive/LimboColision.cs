@@ -8,6 +8,8 @@ public class LimboColision : InteractiveObjectBase
     [SerializeField] private Srl_ObjectDamege srl_ObjectDamege;
     [SerializeField] private float delayTimeReapwn = 0.5f;
 
+    Coroutine coroutine = null;
+
 
     public override void ActionOnTriggerEnter2D(Collider2D collision)
     {
@@ -20,12 +22,12 @@ public class LimboColision : InteractiveObjectBase
             St_StageAction.currentStageController.playerCharacter.TakeDamage(srl_ObjectDamege);
             if (St_StageAction.currentStageController.playerCharacter.IsLive)
             {
-                StartCoroutine(Respawn());
+                coroutine = StartCoroutine(Respawn());
             }
         }
         else
         {
-            StartCoroutine(Respawn());
+            coroutine = StartCoroutine(Respawn());
         }
     }
      IEnumerator Respawn()

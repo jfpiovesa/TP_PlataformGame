@@ -18,11 +18,13 @@ public class ui_StageFinish : MonoBehaviour
 
     [Header("Scene")]
     [SerializeField] private string sceneMenu;
-    private void Awake()
+
+
+    private void OnEnable()
     {
         Initialized();
-    }
 
+    }
     private void Initialized()
     {
         btn_replayAgain.onClick.RemoveAllListeners();

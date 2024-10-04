@@ -44,11 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a90f04d38641345a323d8e4e4050c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  srl_SageInfo:
+  statusStage:
+    nameStage: Florest
     idStage: 0
-    timeStage: 0
+    time: 0
     boxes: 0
-    attempts: 0
+    internshipAttempts: 0
   stageData: {fileID: 11400000, guid: 200bf67e08c29ae4cb5942b24348afe0, type: 2}
   playerCharacter: {fileID: 0}
   isStartingStage: 0

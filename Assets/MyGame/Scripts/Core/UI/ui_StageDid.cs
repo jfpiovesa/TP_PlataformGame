@@ -17,11 +17,11 @@ public class ui_StageDid : MonoBehaviour
 
     [Header("Scene")]
     [SerializeField] private string sceneMenu;
-    private void Awake()
+
+    private void OnEnable()
     {
         Initialized();
     }
-
     private void Initialized()
     {
         btn_replayAgain.onClick.RemoveAllListeners();

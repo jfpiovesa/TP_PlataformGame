@@ -12,27 +12,30 @@ public class UI_MenuGameInStage : MonoBehaviour
     [SerializeField] private Button btn_replayAgain;
     [SerializeField] private Button btn_Menu;
 
-    private void Awake()
+
+    private void OnEnable()
     {
         OnInitialized();
     }
     private void OnInitialized()
     {
         btn_resume.onClick.RemoveAllListeners();
-        btn_resume.onClick.AddListener(Resume);
         btn_replayAgain.onClick.RemoveAllListeners();
-        btn_replayAgain.onClick.AddListener(ReplayAgain);
         btn_Menu.onClick.RemoveAllListeners();
+
+
+        btn_resume.onClick.AddListener(Resume);
+        btn_replayAgain.onClick.AddListener(ReplayAgain);
         btn_Menu.onClick.AddListener(Menu);
     }
-    public  void MenuOn()
+    public void MenuOn()
     {
         content.SetActive(true);
         St_StageAction.MobileCanvas.gameObject.SetActive(false);
         St_StageAction.currentStageController.StopStage();
 
     }
-    void Resume()
+    public void Resume()
     {
         content.SetActive(false);
         St_StageAction.MobileCanvas.gameObject.SetActive(true);

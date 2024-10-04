@@ -12,6 +12,8 @@ public class Trunk : InteractiveObjectBase
     private Coroutine sinkingCoroutine = null;
 
     int randomSinkLog = 0;
+
+
     private void OnEnable()
     {
         initialPosition = transform.position;
@@ -39,7 +41,7 @@ public class Trunk : InteractiveObjectBase
         {
             StopCoroutine(sinkingCoroutine);
             sinkingCoroutine = null;
-            StartCoroutine(RaiseLog());
+             StartCoroutine(RaiseLog());
         }
 
     }

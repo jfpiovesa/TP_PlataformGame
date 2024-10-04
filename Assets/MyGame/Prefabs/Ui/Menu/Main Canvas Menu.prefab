@@ -483,7 +483,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 312.30603, y: -115.190735}
-  m_SizeDelta: {x: 40, y: 40}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6194387880846395653
 CanvasRenderer:
@@ -734,7 +734,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2250554863428129393}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -1156,7 +1156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &6138735049875669709
@@ -1983,7 +1983,7 @@ MonoBehaviour:
   btn_StartGame: {fileID: 6693859168782276196}
   btn_DashBoard: {fileID: 6022122661840693038}
   btn_ExitGame: {fileID: 4398519532293186285}
-  sceneStage: {fileID: 102900000, guid: 8c9cfa26abfee488c85f1582747f6a02, type: 3}
+  sceneStageName: 03-Stage-1
 --- !u!1 &7683293832075266294
 GameObject:
   m_ObjectHideFlags: 0
@@ -2603,7 +2603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6750750681619274370, guid: c808fca2c3b010f4497250a8ecabf6bd, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6750750681619274370, guid: c808fca2c3b010f4497250a8ecabf6bd, type: 3}
       propertyPath: m_AnchorMin.x
@@ -2611,7 +2611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6750750681619274370, guid: c808fca2c3b010f4497250a8ecabf6bd, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6750750681619274370, guid: c808fca2c3b010f4497250a8ecabf6bd, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2651,11 +2651,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6750750681619274370, guid: c808fca2c3b010f4497250a8ecabf6bd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 454.86
       objectReference: {fileID: 0}
     - target: {fileID: 6750750681619274370, guid: c808fca2c3b010f4497250a8ecabf6bd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -145
       objectReference: {fileID: 0}
     - target: {fileID: 6750750681619274370, guid: c808fca2c3b010f4497250a8ecabf6bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
