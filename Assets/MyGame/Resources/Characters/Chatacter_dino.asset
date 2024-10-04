@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efba3804708f244db41a81879f43066, type: 3}
+  m_Name: Chatacter_dino
+  m_EditorClassIdentifier: 
+  playerName: Dino
+  iconeCharacter: {fileID: 21300000, guid: 49860f54c9021a44589932169f7c54e2, type: 3}
+  prefabCharacter: {fileID: 5249112104448502991, guid: 0554b6b6987f16e4cb101122a90da7c7, type: 3}

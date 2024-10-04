@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 8f51cc27a609b8a4db145e09a5588a25
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: 0
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Dinosaur
+  fallbackFontReferences: []
+  customCharacters: 20,4-5783F619D
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
